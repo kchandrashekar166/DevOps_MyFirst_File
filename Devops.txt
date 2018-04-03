@@ -1,0 +1,204 @@
+To check the num of lines in file 
+
+wc Filename
+=====
+Vi editar command
+
+vi
+vim
+Ex
+Ed
+=============
+Cat Command:
+
+to create a file use
+
+cat FileName
+cat > FileName
+cat >> FileName
+
+========
+Touch Command:
+
+create a file with out Data 
+
+touch filename
+// we can create n num of filees by using delimiter space in between filenames 
+
+create 100 files 
+
+touch abc{1..100}.PDF
+
+==============
+cat
+more
+less
+head
+tail
+tailf or "tail -f"
+
+
+continous logs are read by ... we can c those by using tailf command to read log files
+
+
+=================
+
+GUI/ CUI linux/Uni Editors
+
+GUI Editors 
+
+Emacs
+Nedit
+Gedit
+Nano
+pico
+
+CUI Editors
+
+VI [Classic Screen-based editor]
+Vim[vi improved, enanced support for programmed]
+Ex[]
+Ed[]
+
+
+part of Command mode mode 
+
+yy =copy the text
+dd= delete the line
+p= print or past the line which is copied
+
+
+part command mode 
+
+ 
+============
+creating a group
+
+syntax:
+
+groupadd group_name
+gpassword -a joel group_Name
+ls -lrt /etc/grep
+
+
+Search joel in twofiles at a time 
+
+grep joel /etc/password /etc/shadow
+
+====================
+
+/etc/password is a user database file
+
+creating a user
+
+syntax:
+
+useradd name_of_user
+
+
+create user
+useradd chandra
+
+create passwd
+passwd chandra 
+
+To change change root to other user:
+
+use command
+
+to conver to root user use below command
+*sudo su chandra
+
+To change change one user to onether user:
+
+su userName
+passwd 
+
+
+*su
+
+setting password 
+
+syntax:
+goto sudo please and assine password
+
+password Username Enter_password
+
+
+============================
+
+Coping files and directoried:
+
+rm -r -f 
+rmdir
+mv
+cp 
+
+=================
+
+
+
+
+File anddirectory permission is in lthe form of a 3*3 stucture
+
+1.Three permissions(read, write, and execute )
+2.Three types of users(owner, group, and other)
+
+The 9 characters from 2nd to 10th represents the permissions for the three types of users 
+
+
+-rw-r-rr--r---. 1 root root 0 Feb 17 23:08 abc.txt
+
+Permission classes
+
+-=0
+1=x
+2=w
+3=wx 2+1
+4=r
+5=rx
+6=rw
+7=rwx
+
+Change the permissions 
+
+
+
+
+
+chown username filename
+
+chown digital abc.txt
+
+
+chgrb username on_username
+
+
+
+
+
+================================
+
+
+df -TH
+
+=================================
+
+03.04.2018
+
+GitHub
+
+www.github.com
+create a account
+ 
+
+Download a file in three ways 
+
+By http (through Gitbash): 
+
+git config user.name "UserName"
+
+git config user.email "UserEmail"
+
+git clone https://(provide the link)
+
